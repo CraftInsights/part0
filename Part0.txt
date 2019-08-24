@@ -1,0 +1,87 @@
+Part 0.4 - New Note
+
+
+	Broswer		--> HTTP POST https://fullstack-exampleapp.herokuapp.com/notes			Server
+
+										note over server:
+										server receives submitted 
+										text and then relaods the
+										page with the notes url 
+										containing the updated info
+										end note
+
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/notes			Server
+	Broswer					 HTML-code <--						Server
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css		Server
+	Broswer					 main.css  <--						Server
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js			Server
+	Broswer					 main.js   <--						Server
+
+	note over browser:
+	browser starts executing js-code
+	that requests JSON data from server 
+	end note
+
+
+ 	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json		Server
+	Broswer			[{ content: "HTML is easy", date: "2019-05-23" }, ...] <--		Server
+	
+	note over browser:
+	browser executes the event handler
+	that renders notes to display
+	end note
+
+*******************************************************************************************************************************
+
+Part 0.5 - Singe Page App
+
+
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/spa			Server
+	Broswer					 HTML-code <--						Server
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css		Server
+	Broswer					 main.css  <--						Server
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js			Server
+	Broswer					 main.js   <--						Server
+
+	note over browser:
+	browser starts executing js-code
+	that requests JSON data from server 
+	end note
+
+
+ 	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json		Server
+	Broswer			[{ content: "HTML is easy", date: "2019-05-23" }, ...] <--		Server
+	
+	note over browser:
+	browser executes the event handler
+	that renders notes to display
+	end note
+
+*******************************************************************************************************************************
+
+Part 0.6 - Singe Page App New Note
+
+
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/spa			Server
+	Broswer					 HTML-code <--						Server
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css		Server
+	Broswer					 main.css  <--						Server
+	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js			Server
+	Broswer					 main.js   <--						Server
+
+	note over browser:
+	browser starts executing js-code
+	that requests JSON data from server 
+	end note
+
+
+ 	Broswer		--> HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json		Server
+	Broswer			[{ content: "HTML is easy", date: "2019-05-23" }, ...] <--		Server
+	
+	note over browser:
+	browser executes the event handler
+	that renders notes to display
+	end note
+	
+	Broswer		--> HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa		Server
+	Broswer		--> [{ content: "Rick and Morty", date: "2019-08-24T03:09:29.151z)" }]		Server
